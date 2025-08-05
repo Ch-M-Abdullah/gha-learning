@@ -7,4 +7,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: run index js
-              run: "node index.js"
+              run: |
+                ls
+                node index.js
