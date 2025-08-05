@@ -6,7 +6,8 @@ jobs:
     execute-index:
         runs-on: ubuntu-latest
         steps:
+            - name: fetch repo
+              run: actions/checkout@v4
+
             - name: run index js
-              run: |
-                ls
-                node index.js
+              run: node index.js
