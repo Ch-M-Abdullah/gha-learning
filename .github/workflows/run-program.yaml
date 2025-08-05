@@ -1,0 +1,10 @@
+name: run program
+
+on: push
+
+jobs:
+    execute-index:
+        runs-on: ubuntu-latest
+        steps:
+            - name: run index js
+              run: "node index.js"
