@@ -1,0 +1,11 @@
+{
+  "name": "gha-learning",
+  "version": "1.0.0",
+  "description": "Just a sample project for the sole purpose of learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
