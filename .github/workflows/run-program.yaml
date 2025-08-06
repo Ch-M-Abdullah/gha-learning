@@ -1,6 +1,6 @@
 name: run program
 
-on: push
+on: [push, workflow_dispatch]
 
 jobs:
     execute-index:
