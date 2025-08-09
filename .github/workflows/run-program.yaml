@@ -2,6 +2,9 @@ name: run program
 
 on: [push, workflow_dispatch]
 
+env:
+  PORT: 3000
+
 jobs:
     execute-index:
         runs-on: ubuntu-latest
