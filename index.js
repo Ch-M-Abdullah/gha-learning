@@ -1,5 +1,5 @@
 function printEnvVars(){
-    console.log("Env Vars: ", process.env);
+    console.log("Env Vars: ", process.env.PORT);
 }
 
 console.log("Hello World");
