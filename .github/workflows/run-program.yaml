@@ -2,11 +2,11 @@ name: run program
 
 on: [push, workflow_dispatch]
 
-env:
-  PORT: 3000
 
 jobs:
-    execute-index:
+  execute-index:
+        env:
+          PORT: 3000
         runs-on: ubuntu-latest
         steps:
             - name: fetch repo
