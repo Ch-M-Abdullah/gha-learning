@@ -6,7 +6,7 @@ on: [push, workflow_dispatch]
 jobs:
   execute-index:
         env:
-          PORT: 3000
+          PORT: 8080
         runs-on: ubuntu-latest
         steps:
             - name: fetch repo
