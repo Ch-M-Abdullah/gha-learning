@@ -1,6 +1,13 @@
 name: run program
 
-on: [push, workflow_dispatch]
+on: 
+  push:
+  workflow_dispatch:
+    inputs:
+      use-matrix:
+        type: boolean
+        description: Use Matrix
+        default: false
 
 
 jobs:
@@ -9,7 +16,7 @@ jobs:
           matrix:
             PORT: [8080, 3000]
         env:
-          PORT: ${{ matrix.PORT }}
+          PORT: ${{ inputs.use-matrix == true && matrix.PORT || 1 }}
         runs-on: ubuntu-latest
         steps:
             - name: fetch repo
